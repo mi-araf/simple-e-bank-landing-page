@@ -30,12 +30,12 @@
 
 /* ========= .my_fab_button (2)  animated ========= */
 .my_fab_button {
-    width: 140px;
-    height: 45px;
-    font-size: 1.5rem;
+    width: 18rem;
+    height: 3.1rem;
+    font-size: 1rem;
     cursor: pointer;
     border: 2px solid rgb(253, 126, 126);
-    padding: 10px;
+    padding: 12px;
     outline: none;
     background: transparent;
     color: white;
@@ -48,7 +48,7 @@
     content: "";
     position: absolute;
     top: 0;
-    left: -1.7rem;
+    left: -1.8rem;
     width: 1.5rem;
     height: 100%;
     background-color: rgba(255, 154, 21, 0.952);
@@ -58,10 +58,11 @@
 }
 .my_fab_button:hover::before {
     width: 130%;
-    height: 110%;
+    height: 98%;
 }
 .my_fab_button:hover {
     color: black;
+    border: 2px solid rgb(0, 0, 0);
 }
 .my_fab_button:active:before {
     background: #b9b9b9;
@@ -146,3 +147,37 @@
     letter-spacing: 0.4px;
 }
 
+/* ========= About section ========= */
+#about {
+    background-color: #4a4b51;
+    background-image: linear-gradient(143deg, #4a4b51 0%, #72546b 46%, #1e0011 100%);
+}
+
+#about .text_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+}
+#about h6 {
+    color: #D2AF26;
+    /* color: #21B573; */
+    font-weight: 800;
+    font-size: 1ren;
+    letter-spacing: 2px;
+}
+#about h2 {
+    color: #F7F5F4;
+    font-weight: 700;
+    font-size: 2.7rem;
+    /* letter-spacing: 2px; */
+}
+#about p {
+    /* color: #FD511A;  #21B573;*/
+    color: #F7F5F4;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
