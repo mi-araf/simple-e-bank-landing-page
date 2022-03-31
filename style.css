@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;    
+}
+
+        /* =========  my_button_1  ============== */
+.my_button_1 {
+    background: linear-gradient(to right, #c838ec 0%, #9e357bd5  51%, #ee7b0f  88%)
+}
+.my_button_1 {
+    padding: 0.6rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px rgba(92, 95, 90, 0.89);
+    border-radius: 30px;
+}
+
+.my_button_1:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+}
+/* end my_button_1 ========= */
+
+/* ========= .my_fab_button (2)  animated ========= */
+.my_fab_button {
+    width: 140px;
+    height: 45px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid rgb(253, 126, 126);
+    padding: 10px;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+}
+.my_fab_button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1.7rem;
+    width: 1.5rem;
+    height: 100%;
+    background-color: rgba(255, 154, 21, 0.952);
+    /* background-color: white; */
+    z-index: -1;
+    transition: all 0.5s;
+}
+.my_fab_button:hover::before {
+    width: 130%;
+    height: 110%;
+}
+.my_fab_button:hover {
+    color: black;
+}
+.my_fab_button:active:before {
+    background: #b9b9b9;
+}
+/*  ===================== */
+
+/* ========= NAV =========== */
+.navbar {
+    background: #232526;    /* fallback for all browseres */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #181a1bf4);
+    /* padding: 1rem 8rem; */
+    z-index: 1000;    /*  1000 as a bigger value or 1st */
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 1.1rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    padding-top: 0.7rem;
+}
+
+/*     color: rgba(0, 0, 0, .55);
+    padding: 10px 25px;
+     */
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover {
+    color: #e9781cf3;
+}
+
+        /* ====== Home main ========= */
+.home {
+    width: 100%;
+    height: 100vh;      /* vh -> vewiport height */
+    overflow: hidden;
+
+    /* for seeing texts */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-content: center;      /* align-items: center;*/
+}
+
+/* .home img {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+} */
+#home_image {
+    background: rgba(0, 0, 0, 0.65) url("./img/main.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.home_main {
+    padding: 5rem 3rem;
+    position: relative;
+    color: #fff;
+}
+.home_main h2 {
+    font-weight: 900;
+    font-size: 3.9rem;
+    margin-bottom: 1.2rem;
+}
+.home_main p {
+    width: 88%;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.739);
+    letter-spacing: 0.4px;
+}
+
