@@ -6,6 +6,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;    
 }
+html {
+    scroll-behavior: smooth;
+}
+
 .color-pri {
     color: #00FF40;
 }
@@ -101,9 +105,9 @@
 
 /* ========= NAV =========== */
 .navbar {
-    background: #232526;    /* fallback for all browseres */
-    background: -webkit-linear-gradient(to right, #414345, #232526);
-    background: linear-gradient(to right, #414345, #181a1bf4);
+    background: #232526e3;    /* fallback for all browseres */
+    background: -webkit-linear-gradient(to right, #2d3d4cf9, #232526e2);
+    background: linear-gradient(to right, #2d3d4cf1, #181a1be9);
     /* padding: 1rem 8rem; */
     z-index: 1000;    /*  1000 as a bigger value or 1st */
 }
@@ -121,10 +125,9 @@
     padding-top: 0.7rem;
 }
 
-/*     color: rgba(0, 0, 0, .55);
-    padding: 10px 25px;
-     */
-#navbarSupportedContent > ul > li:nth-child(n) > a:hover {
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
+#navbarSupportedContent > ul > li:nth-child(n) > a.active {     
+    /* .active for a tab being highlited */
     color: #e9781cf3;
 }
 
@@ -304,3 +307,21 @@ footer ul > li:hover {
 }
 
 /* ======== Media Queries ========== */
+@media screen and (max-width: 988px) {
+    .home_main {
+        padding: 3rem 1.5rem;
+        position: relative;
+        color: #fff;
+    }
+    .home_main h2 {
+        font-weight: 800;
+        font-size: 2.4rem;
+        margin-bottom: 1.2rem;
+    }
+    .home_main p {
+        width: 88%;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.739);
+        letter-spacing: 0.4px;
+    }
+}
