@@ -71,7 +71,7 @@
 
 /* From cssbuttons.io */
 .my_button_3 {
-    padding: 1.1rem 3rem;
+    padding: 1.1rem 2rem;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
@@ -222,11 +222,12 @@
     font-size: 2.1rem;
 }
 
-/* ============== SErvice =============== */
+/* ============== Service =============== */
 #service .container .col {
     padding-left: 1.2rem;
     padding-right: 1.4rem;
     padding-bottom: 2.6rem;
+    filter: drop-shadow(28px 8px 13px #41414b);
 }
 #service .heading h1 {
     color: #39FF14;
@@ -237,3 +238,37 @@
     background: linear-gradient(to right, #928DAB, #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+/* ============ Get MOre ============= */
+#get {
+    background: #2c3e50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ca1ee, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ca1ee, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#get .text_get {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+}
+#get h6 {
+    color: #D2AF26;
+    /* color: #21B573; */
+    font-weight: 800;
+    font-size: 1ren;
+    letter-spacing: 2px;
+}
+#get h2 {
+    color: #F7F5F4;
+    font-weight: 700;
+    font-size: 2.7rem;
+    /* letter-spacing: 2px; */
+}
+#get p {
+    /* color: #FD511A;  #21B573; #4D4DFF*/
+    color: #F7F5F4;
+    font-weight: 300;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
